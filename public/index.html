@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="shortcut icon" sizes="196x196" href="images/nysl_logo.png">
+    <title>NYSL Home - Northside Youth Soccer League</title>
+    <link rel="stylesheet" href="css/nysl_3.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8994ff9e87.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="home" class="d-block">
+        <div class="container">
+            <div class="row d-none d-lg-block">
+                <div class="dropdown col-12" id="menu">
+                    <button class="btn btn-secondary btn-lg bg-success btn-lg btn-block w-100 text-left" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <h1>Home</h1>
+                    </button>
+                    <ul class="dropdown-menu btn-block" aria-labelledby="dropdownMenu2">
+                        <button onclick="mostrarPaginas('info')" class="dropdown-item text-white bg-success bg-block">
+                            <h2>Game Info</h2>
+                        </button>
+                        <button onclick="mostrarPaginas('about')" class="dropdown-item text-white bg-success bg-block">
+                            <h2>About NYSL</h2>
+                        </button>
+                        <button onclick="mostrarPaginas('contact')" class="dropdown-item text-white bg-success bg-block">
+                            <h2>Contact</h2>
+                        </button>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col ml-4">
+                    <h1>August 4</h1>
+                    <p>NYSL Fundraiser</p>
+
+                    <h1>August 16</h1>
+                    <p> Season Kick-off: Meet the Teams</p>
+
+                    <h1>September 1</h1>
+                    <p> First Game of the Season (Check Game Schedule for details)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="d-none">
+        <div class="container d-none d-lg-block">
+            <div class="dropdown row">
+                <button class="btn btn-secondary btn-lg  bg-success btn-lg btn-block w-100 text-left " type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <h1>About NYSL</h1>
+                </button>
+                <ul class="dropdown-menu btn-block" aria-labelledby="dropdownMenu2">
+                    <button onclick="mostrarPaginas('home')" class="dropdown-item text-white bg-success">
+                        <h2>Home</h2>
+                    </button>
+                    <button onclick="mostrarPaginas('info')" class="dropdown-item text-white bg-success">
+                        <h2>Game Information</h2>
+                    </button>
+                    <button onclick="mostrarPaginas('contact')" class="dropdown-item text-white bg-success">
+                        <h2>Contact</h2>
+                    </button>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="accordion col-12" id="accordionExample">
+                    <div class="card row">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="text-left text-white bg-success col" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <h1>Mision</h1>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body text-justify col">
+                                <p>To support young athletes living in Chicago's northside neighborhoods, who have an interest in learning and playing soccer, with opportunities to learn and practice skills related to the game of soccer, specifically those skills around team cooperation and good sportsmanship.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card row">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="text-left text-white bg-success col" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <h1>Vision</h1>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body text-justify col">
+                                <p>The Northside Youth Soccer League aspires to develop strong, well-rounded, and mindful athletes through the building of character, self-discipline, and leadership.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card row">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="text-left text-white bg-success col-12" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <h1>General Information</h1>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse col" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body text-justify">
+                                <p>The Northside Youth Soccer League was established in 1996 to provide athletes residing in Chicago's northside neighborhoods an environment in which to learn and play soccer. To be a member of NYSL, you must be between the ages of 4 - 12 and reside in a Chicago northside neighborhood. NYSL is run by a small full-time staff, and relies on the generous volunteer time of parents and previous league members.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="info" class="d-none">
+        <div id="app" class="container">
+            <div class="row d-none d-lg-block">
+                <div class="dropdown col-12">
+                    <button class=" text-white bg-success text-center col-12" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <h1>Game Info</h1>
+                    </button>
+                    <ul class="dropdown-menu btn-block" aria-labelledby="dropdownMenu2">
+                        <button onclick="mostrarPaginas('home')" class="dropdown-item text-white bg-success">
+                            <h2>Home</h2>
+                        </button>
+                        <button onclick="mostrarPaginas('about')" class="dropdown-item text-white bg-success">
+                            <h2>About NYSL</h2>
+                        </button>
+                        <button onclick="mostrarPaginas('contact')" class="dropdown-item text-white bg-success">
+                            <h2>Contact</h2>
+                        </button>
+                    </ul>
+                </div>
+            </div>
+            <div class="row"> 
+                <div id="accordion" class="col-12">
+                    <div class="card">
+                        <div>   
+                            <div class="card-header p-0" id="headingOne">
+                                <button class="text-center text-white bg-success col-12" data-toggle="collapse" data-target="#septiembre" aria-expanded="true">
+                                    <h1>September</h1> 
+                                </button>
+                            </div>
+                            <div id="septiembre" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div v-for="game in partidosSeptiembre">
+                                    <div class="card-body p-0" id="child1">
+                                        <div class="card">
+                                            <div class="card-header p-2" data-parent="septiembre">
+                                                <a v-on:click="mostrarChat('juego' + game.gameId)" href="#" data-toggle="collapse" :data-target="'#juego' + game.gameId">
+                                                    <h2 class="text-center">{{game.partido}}</h2>
+                                                </a>
+                                            </div>
+                                            <div class="card-body collapse row" data-parent="child1" :id="'juego' + game.gameId">
+                                                <div class="col-12 text-center">
+                                                    <p>{{game.fecha}}</p>
+                                                    <p>{{game.hora}}</p>
+                                                    <p>{{game.locacion}}</p>
+                                                </div>
+                                                <div class="row justify-content-center">
+                                                    <div class="col-12 d-flex justify-content-center">
+                                                        <iframe v-bind:src="game.mapa" width="250" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                                    </div>
+                                                    <div v-if="!conectado" class="loginButtons col-12 d-sm-flex justify-content-center d-block">
+                                                        <button type="button" class="btn btn-secondary m-2" v-on:click="login">Login</button>
+                                                        <button type="button" class="btn btn-secondary m-2" v-on:click="loginEmail">Login Email</button>
+                                                        <button type="button" class="btn btn-danger m-2" v-on:click="register">Register</button>
+                                                    </div>
+                                                    <div v-if="!conectado" class="col-12">
+                                                        <div class="d-block m-1">
+                                                            <input class="mdl-textfield__input col-12" type="text" id="email" name="email" placeholder="Email" v-model:value="userEmail" />
+                                                        </div>
+                                                        <div class="d-block m-1">
+                                                            <input class="mdl-textfield__input col-12" type="password" id="password" name="password" placeholder="Password" v-model:value="userPassword" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div v-if="conectado" class="row chats m-2 justify-content-center">
+                                                    <label class="justify-content-center mt-2">Message:</label>
+                                                    <input class="m-2" type="text" v-model:value="mensaje" v-on:keyup.enter="send('juego' + game.gameId)">
+                                                    <button type="button" class="btn btn-success" v-on:click="send('juego' + game.gameId)" value="partido1" id="partido1">Enviar</button>
+                                                </div>
+                                                <div v-if="'juego' + game.gameId == partido" v-for="mensaje in mensajes" class="row justify-content-center">
+                                                    <span class="text-danger">{{mensaje.email}}:</span><span> {{ mensaje.texto }}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div> <!-- tabla del mes octubre -->
+                            <div class="card-header p-0" id="headingTwo">
+                                <button class="text-center text-white bg-success col-12" data-toggle="collapse" data-target="#octubre" aria-expanded="false">
+                                    <h1>October</h1>
+                                </button>
+                            </div>
+                            <div id="octubre" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div v-for="game in partidosOctubre">
+                                    <div class="card-body p-0" id="child2">
+                                        <div class="card">
+                                            <div class="card-header p-2" data-parent="octubre">
+                                                <a v-on:click="mostrarChat('juego' + game.gameId)" href="#" data-toggle="collapse" :data-target="'#juego' + game.gameId">
+                                                    <h2 class="text-center">{{game.partido}}</h2>
+                                                </a>
+                                            </div>
+                                            <div class="card-body collapse row" data-parent="child2" :id="'juego' + game.gameId">
+                                                <div class="col-12 text-center">
+                                                    <p>{{game.fecha}}</p>
+                                                    <p>{{game.hora}}</p>
+                                                    <p>{{game.locacion}}</p>
+                                                </div>
+                                                <div>
+                                                    <div class="col-12 d-flex justify-content-center">
+                                                        <iframe v-bind:src="game.mapa" width="250" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                                    </div>
+                                                    <div v-if="conectado" class="row chats m-2 justify-content-center">
+                                                        <label class="mt-2">Message:</label>
+                                                        <input class="m-2" type="text" v-model:value="mensaje" v-on:keyup.enter="send('juego' + game.gameId)">
+                                                        <button type="button" class="btn btn-success" v-on:click="send('juego' + game.gameId)" value="partido1" id="partido1">Enviar</button>
+                                                    </div>
+                                                    <div v-if="'juego' + game.gameId == partido" v-for="mensaje in mensajes" class="row justify-content-center">
+                                                        <span class="text-danger">{{mensaje.email}}:</span><span> {{ mensaje.texto }}</span>
+                                                    </div>
+                                                    <div v-if="!conectado" class="loginButtons col-12 d-sm-flex justify-content-center d-block">
+                                                        <button type="button" class="btn btn-secondary m-2" v-on:click="login">Login</button>
+                                                        <button type="button" class="btn btn-secondary m-2" v-on:click="loginEmail">Login Email</button>
+                                                        <button type="button" class="btn btn-danger m-2" v-on:click="register">Register</button>
+                                                    </div>
+                                                    <div v-if="!conectado" class="col-12">
+                                                        <div class="d-block m-1">
+                                                            <input class="mdl-textfield__input col-12" type="text" id="email" name="email" placeholder="Email" v-model:value="userEmail" />
+                                                        </div>
+                                                        <div class="d-block m-1">
+                                                            <input class="mdl-textfield__input col-12" type="password" id="password" name="password" placeholder="Password" v-model:value="userPassword" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="d-none">
+            <div class="container">
+                <div class="dropdown row">
+                    <button class="btn btn-secondary btn-lg bg-success btn-lg btn-block w-100 text-left " type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <h1>Contact</h1>
+                    </button>
+                    <ul class="dropdown-menu btn-block" aria-labelledby="dropdownMenu2">
+                        <button onclick="mostrarPaginas('home')" class="dropdown-item text-white bg-success bg-block">
+                            <h2>Home</h2>
+                        </button>
+                        <button onclick="mostrarPaginas('info')" class="dropdown-item text-white bg-success bg-block">
+                            <h2>Game Info</h2>
+                        </button>
+                        <button onclick="mostrarPaginas('about')" class="dropdown-item text-white bg-success bg-block">
+                            <h2>About NYSL</h2>
+                        </button>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col m-5">
+                        <p>Please email us at <a href="#">nysl@chisoccer.org</a></p>
+                        <p>We will reply to your email as soon as we can.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar-fixed-bottom  container-fluid">
+        <div class="row d-lg-none justify-content-center bg-success">
+            <div class="col col-sm-5" id="menu">
+                <button onclick="mostrarPaginas('home')" class="btn bg-success pl-sm-5 ml-sm-5" type="button">
+                    <i class="fas fa-home bg-success fa-3x"></i>
+                </button>
+            </div>
+            <div class="col col-sm-5">
+                <button onclick="mostrarPaginas('info')" class="btn btn-lg bg-success btn-inline" type="button">
+                    <img src="images/nysl_logo.png" alt="game info" class="w-50">
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAoOrNx4VYJXylOOQrYnrOeUnghsh_2tPs",
+            authDomain: "nyslmobile-836fd.firebaseapp.com",
+            databaseURL: "https://nyslmobile-836fd.firebaseio.com",
+            projectId: "nyslmobile-836fd",
+            storageBucket: "nyslmobile-836fd.appspot.com",
+            messagingSenderId: "502417156165",
+            appId: "1:502417156165:web:2c065f818b76c6d4265b2c"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script/pruebaVue.js"></script>
+    <script src="script/main.js"></script>
+
+
+</body>
+
+</html>

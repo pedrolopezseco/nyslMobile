@@ -1,0 +1,38 @@
+body { 
+    padding-bottom: 70px;  
+}
+
+p {
+    font-size: 20px;  
+}
+
+button h1 {
+    font-size: 40px;  
+}
+
+nav {
+    position: fixed; 
+    bottom: 0;
+}
+
+a h2 {
+    font-size: 30px;
+}
+
+@media (orientation: landscape) {
+  body {
+    flex-direction: row;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+}
+
+i {
+    color: white;
+}
+
+    
